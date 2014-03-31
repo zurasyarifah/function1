@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+
+int x=50;
+int main()
+{
+    double x;
+    x=5.678901234;
+    cout<<x<<" "<<::x<<endl;
+    ::x=77;
+    
+    cout<<x<<" "<<::x<<endl;
+}
