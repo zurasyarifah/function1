@@ -1,0 +1,33 @@
+#include <iostream>
+#include <iomanip>
+
+
+using namespace std;
+
+long kuadrat (long l);
+double maks (double x, double y);
+
+int main()
+{
+    for (long bil=200; bil<2000;bil+=200)
+    
+    cout<<setw(8)<<bil
+    <<setw(8)<<kuadrat(bil)<<endl;
+    
+    cout<<maks(65789,123)<<endl;
+    cout<<maks(123,65789)<<endl;
+}
+
+long kuadrat(long l)
+{
+    return(l*l);
+}
+
+double maks(double x, double y)
+{
+    if(x>y)
+    return(x);
+
+else 
+return(y);
+}
