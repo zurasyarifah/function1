@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+void saya_ingat();
+void saya_ingat_2();
+int main()
+{
+    int mamamia=50;
+    saya_ingat();
+    saya_ingat();
+    saya_ingat();
+    
+    cout<<"main():mamamia= "<<mamamia<<endl;
+    
+    saya_ingat_2();
+    saya_ingat_2();
+    saya_ingat_2();
+    
+    cout<<"main():mamamia= "<<mamamia<<endl;
+}
+
+void saya_ingat()
+
+{
+    static int mamamia=77;
+    mamamia++;
+    cout<<"saya_ingat():mamamia: "<<mamamia<<endl;
+}
+
+void saya_ingat_2()
+
+{
+    int mamamia=77;
+    mamamia++;
+    cout<<"saya_ingat_2():mamamia= "<<mamamia<<endl;
+}
