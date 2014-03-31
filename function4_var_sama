@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int fernando=55;
+void bravo();
+int main()
+
+{
+    cout<<"main():fernando= "<<fernando<<endl;
+    
+    bravo();
+    cout<<"main():fernando= "<<fernando<<endl;
+}
+void bravo()
+{
+    int fernando;
+    fernando=77;
+    cout<<"bravo():fernando= "
+    <<fernando<<endl;
+}
