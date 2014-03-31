@@ -1,0 +1,49 @@
+#include <iostream>
+
+using namespace std;
+
+void tukar (int a, int b);
+void tukar_1 (int &a, int &b);
+
+int main()
+{
+    int a, b;
+    a=55;
+    b=77;
+    
+    cout<<"main():a= "<<a<<endl;
+    cout<<"main():b= "<<b<<endl;
+    
+    tukar(a,b);
+    
+    cout<<"main():a= "<<a<<endl;
+    cout<<"main():b= "<<b<<endl;
+    cout<<endl;
+    
+    tukar_1(a,b);
+    cout<<"main():a= "<<a<<endl;
+    cout<<"main():b= "<<b<<endl;
+}
+
+void tukar (int a, int b)
+
+{
+    int tmp;
+    tmp=a;
+    a=b;
+    b=tmp;
+    cout<<"tukar():a= "<<a<<endl;
+    cout<<"tukar():b= "<<b<<endl;
+}
+
+void tukar_1 (int &a, int &b)
+
+{
+    int tmp;
+    tmp=a;
+    a=b;
+    b=tmp;
+    
+    cout<<"tukar():a= "<<a<<endl;
+    cout<<"tukar():b= "<<b<<endl;
+}
