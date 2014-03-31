@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+void alpha();
+int main()
+{
+    int x=22;
+    int main();
+    
+    double y=2.22;
+    
+    cout<<"pada main ():x= "<<x
+    <<", y= "<<y<<endl;
+    alpha();
+    cout<<"pada main():x= "<<x
+    <<", y= "<<y<<endl;
+}
+
+void alpha()
+{
+    int x=20;
+    double y=3.14;
+    
+    cout<<"pada alpha():x= "<<x
+    <<", y= "<<y<<endl;
+}
